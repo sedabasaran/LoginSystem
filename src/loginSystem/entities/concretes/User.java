@@ -1,6 +1,8 @@
 package loginSystem.entities.concretes;
 
-public class User {
+import loginSystem.entities.abstracts.Entities;
+
+public class User implements Entities {
 	public int id;
 	public String userName;
 	public String userLastName;
