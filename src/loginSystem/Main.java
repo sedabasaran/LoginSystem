@@ -13,8 +13,8 @@ public class Main {
 		User user = new User(1,"Seda","Basaran","seda@gmail.com","123456");
 		UserService userService = new UserManager(new HibernateUserRepository(), new GoogleUserAccountAdapter(), new UserCheckManager());
 				
-//		userService.add(user);
-//		userService.delete(user);
+		userService.add(user);
+		userService.delete(user);
 		userService.login(user);
 		
 	}
